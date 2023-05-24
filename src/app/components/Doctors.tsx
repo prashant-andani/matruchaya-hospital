@@ -27,7 +27,7 @@ import {
    ];
     return (
         <>
-        <Typography variant="h3" color={Constants.themeColor} className="mb-10">Doctors</Typography>
+        <Typography variant="h3" color="blue-gray" className="mb-10">Doctors</Typography>
        
         <div className="grid md:grid-flow-col grid-flow-row gap-4 sm:grind-cols-1">                             
             {doctorsList.map(doctor => (
