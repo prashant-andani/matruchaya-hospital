@@ -27,6 +27,7 @@ function Icon({ id, open }) {
 export default function FAQ() {
   const [open, setOpen] = useState(0);
     const faqs = [{
+        id: 1,
         title: 'What is a maternity hospital?',
         description: () => {
             return(<div>
@@ -43,6 +44,7 @@ export default function FAQ() {
         }
     },
     {
+        id: 2,
         title: 'What should I pack for my stay in a maternity hospital?',
         description: ()=> {}
     }];
@@ -54,7 +56,7 @@ export default function FAQ() {
     <div className="w-3/5">
       <Typography variant="h3" color="blue-gray" className="mb-5">FAQs</Typography>
       {faqs.map((faq, i) => (
-        <Accordion open={open === i} icon={<Icon id={i} open={open} />}>
+        <Accordion key={faq.id} open={open === i} icon={<Icon id={i} open={open} />}>
         <AccordionHeader onClick={() => handleOpen(i)}>
             {faq.title}
         </AccordionHeader>

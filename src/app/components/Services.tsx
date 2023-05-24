@@ -1,45 +1,45 @@
 import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Button
-  } from "./Material-Components";
-  import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+    Typography
+} from "./Material-Components";
 
 
   export default function Services() {
     const servicesList = [{
+        id: 1,
         title: "Maternity / Pregnancy Care",
         description: "Maternity care is crucial for ensuring the health and well-being of both the mother and the baby. By receiving appropriate medical attention, education, and support throughout pregnancy and beyond, women can have a positive and safe childbirth experience while promoting the healthy development of their child.",
         isReadMore: false,
         imageUrl: 'pregnancy.jpg'
     }, {
+        id: 2,
         title: "Birthing Care",
         description: "Birth care varies depending on cultural practices, healthcare systems, and individual preferences. The goal is to provide a safe and supportive environment for women during the transformative experience of giving birth, promoting the well-being of both the mother and the newborn.",
         isReadMore: false,
         imageUrl: '/birth-care.jpg'
     },
     {
+        id: 3,
         title: "New Born and Child care",
         description: "Newborn and child care is the process of providing for the physical, emotional, and developmental needs of infants and young children. It includes a variety of tasks, such as feeding, bathing, dressing, changing diapers, playing, and providing comfort.",
         isReadMore: false,
         imageUrl: '/child-care.jpg'
     },
     {
+        id: 4,
         title: "Baby Care",
         description: "Baby care requires attentive and nurturing caregiving to meet the needs of the growing child. It is essential to provide love, care, and attention to support the baby's physical, emotional, and cognitive development. Consulting with healthcare professionals and accessing reliable parenting resources can provide additional guidance and support for effective baby care.",
         isReadMore: false,
         imageUrl: '/baby-care.jpg'
     },
     {
+        id: 5,
         title: "Gynaecology Care",
         description: "Gynaecology care is the medical care of the female reproductive system. It is provided by a gynecologist, who is a doctor who specializes in women's health. Gynecologists offer a wide range of services",
         isReadMore: false,
         imageUrl: '/gynaecology.jpg'
     },
     {
+        id: 6,
         title: "Diabetes Care",
         description: "Diabetic care is the process of managing diabetes to prevent or delay complications. It includes a variety of lifestyle changes, such as eating a healthy diet, exercising regularly, and maintaining a healthy weight. Diabetic care also includes taking medication, if needed, and monitoring blood sugar levels.",
         isReadMore: false,
@@ -89,15 +89,15 @@ import {
 
     <div className="grid md:grid-flow-col grid-flow-row gap-4 grid-rows-2 sm:grid-cols-1">
         
-        {servicesList.map(service => (
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        {servicesList.map((service) => (
+            <div key={service.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <img class="rounded-t-lg" src={service.imageUrl} alt="" />
+                    <img className="rounded-t-lg" src={service.imageUrl} alt="" />
                 </a>
                 
-                <div class="p-5">
+                <div className="p-5">
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{service.title}</h5>
+                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{service.title}</h5>
                         <Typography color="gray" className="font-medium mb-4">
                             {service.description}
                         </Typography>

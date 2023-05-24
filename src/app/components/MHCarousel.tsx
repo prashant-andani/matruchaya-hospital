@@ -1,17 +1,20 @@
-import { Carousel, Typography, Button } from "./Material-Components.tsx";
+import { Carousel, Typography } from "./Material-Components";
 
 const MHCarousel = ()=> {
     const sliders = [{
+        id: 1,
         title: 'Service under the excellence of renowned Dr. Sarvottam Rao',
         description: '',
         imageURL: '/maternity-child-care.jpg'
     },
-    {
+    {   
+        id: 2,
         title: 'Maternity and Baby care',
         description: '',
         imageURL: '/maternity-child-care.jpg'
     },
     {
+        id: 3,
         title: 'NICU - Neonatal Intensive Care Unit',
         description: '',
         imageURL: '/maternity-child-care.jpg'
@@ -19,7 +22,7 @@ const MHCarousel = ()=> {
     return (
         <Carousel className="h-1/2">
             {sliders.map( slider => (
-            <div className="relative w-full" style={{height: "42rem"}}>
+            <div key={slider.id} className="relative w-full" style={{height: "42rem"}}>
             <img
                 src="/maternity-child-care.jpg"
                 alt="Maternity and Baby Care"
