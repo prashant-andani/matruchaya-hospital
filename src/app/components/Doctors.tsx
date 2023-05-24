@@ -31,13 +31,13 @@ import {
        
         <div className="grid md:grid-flow-col grid-flow-row gap-4 sm:grind-cols-1">                             
             {doctorsList.map(doctor => (
-                <div key={doctor.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div key={doctor.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                     <a href="#">
                         <img className="rounded-t-lg" src={doctor.photoURL} alt="" />
                     </a>
                     <div className="p-5">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{doctor.name}</h5>
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{doctor.name}</h5>
                             <Typography color="gray" className="font-bold mb-4">
                                 {doctor.designation}
                             </Typography>

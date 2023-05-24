@@ -12,8 +12,8 @@ import {
 import Constants from "../constants";
 
 const AlertBanner = ()=> {
-    return (<div id="alert-border-5" className="flex p-2 bg-gray-50 dark:bg-gray-800 dark:border-gray-600" role="alert">
-    <div className="ml-3 text-sm font-medium text-gray-800 dark:text-gray-300">
+    return (<div id="alert-border-5" className="flex p-2 bg-gray-50" role="alert">
+    <div className="ml-3 text-sm font-medium text-gray-800">
     Garbha Sanskara / Pregnancy classes starting soon, call at <a href="tel:9916116698">
               <strong>9916116698</strong>{' '}
             </a> for more details.

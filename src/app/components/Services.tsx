@@ -90,14 +90,14 @@ import {
     <div className="grid md:grid-flow-col grid-flow-row gap-4 grid-rows-2 sm:grid-cols-1">
         
         {servicesList.map((service) => (
-            <div key={service.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div key={service.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                 <a href="#">
                     <img className="rounded-t-lg" src={service.imageUrl} alt="" />
                 </a>
                 
                 <div className="p-5">
                     <a href="#">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{service.title}</h5>
+                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{service.title}</h5>
                         <Typography color="gray" className="font-medium mb-4">
                             {service.description}
                         </Typography>
