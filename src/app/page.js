@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react';
+
 import MHCarousel from './components/MHCarousel'
 import Header from './components/Header'
 import Services from './components/Services'
@@ -5,9 +7,11 @@ import Doctors from './components/Doctors'
 import FAQ from './components/FAQ'
 import Address from './components/Address'
 import Constants from './constants'
+
 export default function Home() {
   return (<>
-    <Header></Header>
+    <Analytics/>
+    <Header/>
     <MHCarousel></MHCarousel>
     <main className="flex min-h-screen flex-col items-center justify-between p-0">
       <blockquote className="p-4 my-4 border-l-4 border-gray-300 bg-gray-50">
