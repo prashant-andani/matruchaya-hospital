@@ -1,4 +1,5 @@
 import Constants from "../constants";
+import Image from 'next/image';
 import {
     Typography,
   } from "./Material-Components";
@@ -9,13 +10,13 @@ import {
         name: "Dr. Sarvottam Rao",
         designation: "MBBS, MD, FICOG",
         practice: ["Obstetrics", "Gynaecology care"],
-        photoURL: ''
+        photoURL: '/sarvottam_rao.jpeg'
     }, {
         id:2,
         name: "Dr. Nandini Bhosgi",
         designation: "MBBS, MS, CCDM",
         practice: ["Obstetrics", "Gynaecology", "Diabetes care"],
-        photoURL: ''
+        photoURL: '/nandini_bhosgi.jpeg'
     },
     {
         id:3,
@@ -32,9 +33,7 @@ import {
         <div className="grid md:grid-flow-col grid-flow-row gap-4 sm:grind-cols-1">                             
             {doctorsList.map(doctor => (
                 <div key={doctor.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-                    <a href="#">
-                        <img className="rounded-t-lg" src={doctor.photoURL} alt="" />
-                    </a>
+                        <Image style={{height: '280px', width: '400px'}} loading="lazy" width="500" height="500" alt={doctor.name} className="rounded-t-lg" src={doctor.photoURL} alt="" />
                     <div className="p-5">
                         <a href="#">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{doctor.name}</h5>
