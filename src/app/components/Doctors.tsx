@@ -33,7 +33,7 @@ import {
         <div className="grid md:grid-flow-col grid-flow-row gap-4 sm:grind-cols-1">                             
             {doctorsList.map(doctor => (
                 <div key={doctor.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-                        <Image style={{height: '280px', width: '400px'}} loading="lazy" width="500" height="500" alt={doctor.name} className="rounded-t-lg" src={doctor.photoURL} alt="" />
+                        <Image style={{height: '280px', width: '400px'}} loading="lazy" width="500" height="500" alt={doctor.name} className="rounded-t-lg" src={doctor.photoURL}/>
                     <div className="p-5">
                         <a href="#">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{doctor.name}</h5>
