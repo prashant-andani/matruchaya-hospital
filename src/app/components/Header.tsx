@@ -12,12 +12,18 @@ import {
 import Constants from "../constants";
 
 const AlertBanner = ()=> {
-    return (<div id="alert-border-5" className="flex p-2 bg-gray-50" role="alert">
-    <div className="ml-3 text-sm font-medium text-gray-800">
+    return (
+        <div class="bg-gradient-to-r to-cyan-500 from-blue-500">
+    <div id="alert-border-5" className="flex p-2" role="alert">
+       
+        <div className="ml-3 text-sm font-medium text-white-800">
     Garbha Sanskara / Pregnancy classes starting soon, call at <a href="tel:9916116698">
               <strong>9916116698</strong>{' '}
             </a> for more details.
     </div>
+        </div>
+
+   
 </div>)
 }
 export default function Header() {
