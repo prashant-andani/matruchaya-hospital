@@ -13,7 +13,7 @@ import Constants from "../constants";
 
 const AlertBanner = ()=> {
     return (
-        <div class="bg-gradient-to-r to-cyan-500 from-blue-500">
+        <div className="bg-gradient-to-r to-cyan-500 from-blue-500">
     <div id="alert-border-5" className="flex p-2" role="alert">
        
         <div className="ml-3 text-sm font-medium text-white-800">
